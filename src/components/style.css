@@ -1,0 +1,88 @@
+
+.lightMode{
+    --bg-color:#FFFFFF;
+    --profile-color:#272727;
+    --btn-bg-color:#FFFFFF;
+    --btn-color:#77797E;
+    --lang-color:#77797E;
+    --footer-color:#F2F2F2;
+    --serach-box:#FFFFFF;
+    --input-border:#DFE1E5;
+    --input-color:#1a1a1a;
+    --border-b:#dbdcdd;
+    --title-color:#3527f8;
+    --menu-color:#565758;
+    --desc:#4d5156;
+  }
+  .darkMode{
+    --bg-color:#202124;
+    --profile-color:#FFFFFF;
+    --btn-bg-color:#303134;
+    --btn-color:#E8EAED;
+    --lang-color:#77797E;
+    --input-color:#ffffff;
+    --footer-bg-color:#171717;
+    --serach-box:#303134;
+    --input-border:#5F6368;
+    --border-b:#5F6368;
+    --title-color:#8AB4F8;
+    --menu-color:#ffffff;
+    --desc:#BDC1C6;
+  }
+
+body{
+    background: var(--bg-color);
+}
+body .span{
+    color: var(--profile-color);
+}
+body input{
+    background: var(--bg-color);
+    color: var(--input-color);
+}
+
+body .inputBox{
+    border: 1px solid var(--input-border);
+}
+body .inputBox:hover{
+    background: var(--btn-bg-color);
+}
+body .inputBox:hover input{
+    background-color: var(--btn-bg-color);
+}
+body .inputbtn{
+    background: var(--btn-bg-color);
+    color: var(--btn-color);
+    border: none;
+}
+body .inputbtn:hover{
+    border: 1px solid var(--input-border);
+}
+body .lang{
+    color: var(--lang-color);
+}
+body .footer{
+    color: var(--footer-color);
+    background-color: var(--footer-bg-color);
+}
+body .bb{
+    border-bottom: 1px solid var(--input-border);
+}
+body .modeBtn{
+    color: var(--profile-color);
+}
+body .headerBg{
+    background-color: var(--bg-color);
+    border: var(--border-b);
+}
+body .title{
+    color: var(--title-color);
+}
+body .menuTitle{
+    color: var(--menu-color);
+}
+body .desc{
+    color: var(--desc);
+}
+
+

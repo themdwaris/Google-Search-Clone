@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import SearchResult from "./components/SearchResult";
 import { AppProvider } from "./utils/ContextApi";
+import "./components/style.css";
 
 function App() {
   return (

@@ -5,6 +5,7 @@ import SearchInput from "./SearchInput";
 import ProfileIcon from "./ProfileIcon";
 import { useYourContext } from "../utils/ContextApi";
 import { menu } from "../utils/Constants";
+import "./style.css";
 
 const SearchResultHeader = () => {
   const [selectedMenu, setSelectedMenu] = useState("All");
@@ -20,7 +21,7 @@ const SearchResultHeader = () => {
     setImages(imageType ? true : false);
   };
   return (
-    <div className="p-[14px] pb-0 md:pr-5 md:pl-20 md:pt-7 flex md:block flex-col items-center sticky top-0 bg-white border border-[#ebebeb]">
+    <div className="headerBg p-[14px] pb-0 md:pr-5 md:pl-20 md:pt-7 flex md:block flex-col items-center sticky top-0 bg-white border border-[#ebebeb]">
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center justify-start grow gap-2 md:gap-5">
           <Link to="/">
@@ -43,8 +44,8 @@ const SearchResultHeader = () => {
               key={index}
               onClick={() => menuHandler(name)}
             >
-              <span className="hidden md:block">{icon}</span>
-              <span>{name}</span>
+              <span className="menuTitle hidden md:block">{icon}</span>
+              <span className="menuTitle">{name}</span>
               {selectedMenu === name && (
                 <span className="h-[3px] w-[100%] absolute bottom-0 left-[0] md:left-[10px] bg-[#4e73f9] rounded-full" />
               )}

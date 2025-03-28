@@ -14,10 +14,10 @@ const SearchedItemTemplate = ({ data }) => {
         <div className="text-sm truncate text-[#28292b]">
         {data.formattedUrl}
         </div>
-        <div className="group hover:underline text-xl text-[#351ee5] pt-2">
+        <div className="title group hover:underline text-xl text-[#351ee5] pt-2">
         {data.title}
         </div>
-        <div className="text-sm text-[#4d5156] leading-6 pt-1" dangerouslySetInnerHTML={createMarkup(data.htmlSnippet)}/>
+        <div className="desc text-sm text-[#4d5156] leading-6 pt-1" dangerouslySetInnerHTML={createMarkup(data.htmlSnippet)}/>
       </div>
     </div>
   );
